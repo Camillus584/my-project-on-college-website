@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Univerty website</title>
+  <link rel="stylesheet" type="text/css" href="cp.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="home.html"><img src="images/sjclogo.png"></a>
+      <div class="nav-links" id="navLinks">
+	  <i class="fa fa-times" onClick="hideMenu()"></i>
+        <ul>
+           <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+	  <i class="fa fa-bars" onClick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+  
+  <!-------about us content------>
+  
+  <section class="about-us">
+  <div class="row">
+  <div class="about-col">
+  <h1>We Are The JOSEPHITE'S</h1>
+  <p>St. Joseph’s College, Tiruchirappalli is an autonomous, co-ed college which was established in the year 1844, in the state of Tamil Nadu. Previously, it was affiliated to Madras University. Currently, it is affiliated to Bharathidasan University. It is the only college awarded with the Heritage Status by UGC in Tamil Nadu. The St. Joseph’s College, Trichy  offers various undergraduate and postgraduate courses. Students from 5 countries and 21 states study at SJC. The teacher-student ratio is 1:23. The notable alumni of the college are Dr A.P.J Abdul Kalam ( former president of India),  Mr Shiv Nadar (founder and chairperson of HCL), Prof. G.N. Ramachandran (renowned Physicist), etc to name a few.
+  <br><br>The St. Joseph’s College, Trichy  has a fine arts association that provides students an opportunity to showcase their talents. It organizes various Literary, Music, Dance, Painting Photography, and Painting events. The College has an astronomy club to impart knowledge about astronomy and its importance to the students. It also has a bibliophile club, communication club, and film appreciation club. In order to instill leadership qualities and to make the students more aware of the society, the St. Joseph’s College, Trichy  organizes various NSS activities.
+  <br><br>The SJC, Trichy also offers a Transfer Program wherein the students taking up Humanities, Social Sciences or Business can study the first four semesters at St Joseph's Trichy Campus and the remaining three semesters at Concordia College, New York to get an American undergraduate degree. The college is also a CA coaching center that is accredited by ICAI (Institute of Charted Accountant of India). Coaching is provided to interested B.Com and BBA students by professors at St. Joseph's at a nominal fee.
+  <br><br>SJC, Trichy aims to provide quality education to its students to help them develop their technical and personal skills. They also aim to make the students socially responsible citizens. St Joseph's College admission is based on past academic records and qualifying examination scores.</p>
+  <a href="contact.html" class="hero-btn red-btn">EXPLORE NOW</a>
+  </div>
+  <div class="about-col">
+  <img src="images/Screenshot_2023-05-21-16-46-22-09_99c04817c0de5652397fc8b56c3b3817.jpg">
+  </div>
+  </div>
+  </section>
+  
+  <!---- Footer ---->
+  
+  <section class="footer">
+  <h4>About Us</h4>
+  <p>St.Joseph's College (Autonomous)</p>
+  <p>College Main Road, Annamalai Nagar, Teppakulam, Tiruchirappalli, Tamil Nadu 620002</p>
+  <div class="icons">
+  <i class="fa fa-facebook-official"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter-square"></i>
+  <i class="fa fa-linkedin-square"></i>
+  </div>
+  <p>copyrights&copy;2023</p>
+  <p>Made with &hearts; <i class="fa fa-heart-o"></i>by CAMILLUS</p>
+  </section>
+  
+  <!-------JavaScript for Toggle Menu----->
+  <script>
+  
+  var navLinks= document.getElementById("navLinks");
+  function showMenu(){
+     navLinks.style.right ="0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+  
+  </script>
+  
+  
+</body>
+</html>

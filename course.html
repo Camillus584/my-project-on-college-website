@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Univerty website</title>
+  <link rel="stylesheet" type="text/css" href="cp.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="home.html"><img src="images/sjclogo.png"></a>
+      <div class="nav-links" id="navLinks">
+	  <i class="fa fa-times" onClick="hideMenu()"></i>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+	  <i class="fa fa-bars" onClick="showMenu()"></i>
+    </nav>
+    <h1>Our Courses</h1>
+  </section>
+  
+ <!-------- course content ------->
+ 
+  <section class="course">
+  <h1>Course We Offer</h1>
+  <p>The St Joseph's College, Tiruchirappalli offers courses in two shifts, the details of which are given below.</p>
+  </section>
+  
+  <div class="row">
+  <div class="course-col">
+  <h3>I Shift <br>Courses</h3>
+  <p>courses offered in the Ist shift from 8:30 am to 1:20 pm.</p>
+  </div>
+  <div class="course-col">
+  <h3>II Shift Courses</h3>
+  <p>courses offered in the II shift from 1:40 pm to 6:30 pm.</p>
+  </div>
+    <div class="course-col">
+  <h3>Under Graduate</h3>
+  <p>B.A(English,History,Tamil)<br>
+  B.Com(CA)<br>
+  B.Sc(Botany,Chemistry,Computer Science,Mathematics,Physics,Statistics,<br>Electronics,Visual Communication)<br>
+  B.VOC(Viscom Technology,Software Development & System Administration)<br>
+  BCA<br>
+  BBA</p>
+  </div>
+    <div class="course-col">
+  <h3>Post Graduation</h3>
+  <p>M.A(English,HRM,History,Tamil)<br>
+  M.Com(Computer Application)<br>
+ M.Sc(Chemistry,Computer Science,<br>Mathematics,Physics,Information Technology,<br>Electronics,Biochemistry,Biotechnology)<br>
+  PG Diploma(Computer Science Application)<br>
+  </p>
+  </div>
+      <div class="course-col">
+  <h3>Doctorate</h3>
+  <p>M.Phil/Ph.D(Biotechnology,Botany,Computer Science,<br>Statistics,English,History,<br>Economics,HRM,Chemistry,Physics,Tamil,BBA)<br>
+  </p>
+  </div>
+  </div>
+  
+  </section>
+  
+  <!---------- facilities ----->
+   
+  <section class="facilities">
+  <h1>Our Facilities</h1>
+  <p>The infrastructure facilities offered by the college.</p>
+  <div class="row">
+  <div class="facilities-col">
+  <img src="images/libra.png">
+  <h3>World Class Library</h3>
+  <p>Each department has its own library.<br>
+The central library currently has 163152 volumes of books of which 5121 books belong to the rare collection category.<br> It also provides access to around 209 print journals.</p>
+  </div>
+  <div class="facilities-col">
+  <img src="images/musu.png">
+  <h3>Largest Play Ground</h3>
+  <p>Our College provides spacious playfields for Football, Volleyball, Basket ball, Kabaddi, Handball and Ball Badminton. Our students’ most favourite game is football and they show immense interest in it.</p>
+  </div>
+  <div class="facilities-col">
+  <img src="images/hos.png">
+  <h3>Two Types Of Hostels</h3>
+  <p>St Joseph's College facilities include state of the art hostel for both girls and boys. <br>The hostel will be provided only after the students gets admission into any of the courses provided by the college and after an interview with the Director.<br> The parent needs to be present at the time of admission.<br> The hostel details are as mentioned below.</p>
+  </div>
+  </div>
+  </section>
+  
+  <!---- Footer ---->
+  
+  <section class="footer">
+  <h4>About Us</h4>
+  <p>St.Joseph's College (Autonomous)</p>
+  <p>College Main Road, Annamalai Nagar, Teppakulam, Tiruchirappalli, Tamil Nadu 620002</p>
+  <div class="icons">
+  <i class="fa fa-facebook-official"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter-square"></i>
+  <i class="fa fa-linkedin-square"></i>
+  </div>
+  <p>copyrights&copy;2023</p>
+  <p>Made with &hearts; <i class="fa fa-heart-o"></i>by CAMILLUS</p>
+  </section>
+  
+  <!-------JavaScript for Toggle Menu----->
+  <script>
+  
+  var navLinks= document.getElementById("navLinks");
+  function showMenu(){
+     navLinks.style.right ="0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+  
+  </script>
+  
+  
+</body>
+</html>

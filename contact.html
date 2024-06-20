@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Univerty website</title>
+  <link rel="stylesheet" type="text/css" href="cp.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="home.html"><img src="images/sjclogo.png"></a>
+      <div class="nav-links" id="navLinks">
+	  <i class="fa fa-times" onClick="hideMenu()"></i>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+	  <i class="fa fa-bars" onClick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+  
+ <!-----------contact us---------->
+ 
+ <section class="location">
+ 
+ <iframe src="https://www.bing.com/maps/embed?h=450&w=600&cp=10.825992780197112~78.69721412658691&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no" height="450" width="600" style="border:100;" allowfullscreen="" loading="lazy"></iframe>
+  
+ </section>
+ 
+ <section class="contact-us">
+ 
+ <div class="row">
+ <div class="contact-col">
+ <div>
+  <i class="fa fa-home"></i>
+  <span>
+  <h5>College Main Road, Annamalai Nagar, Teppakulam, Tiruchirappalli, Tamil Nadu 620002</h5>
+  <p> Tiruchirappalli, Tamil Nadu 620002</p>
+  </span>
+ </div>
+ <div>
+  <i class="fa fa-phone"></i>
+  <span>
+  <h5>+91 8015399305</h5>
+  <p>Monday to saturday, 10AM to 6PM</p>
+  </span>
+ </div>
+ <div>
+  <i class="fa fa-envelope-o"></i>
+  <span>
+  <h5>camillus@gmail.com</h5>
+  <p>Email us your query</p>
+  </span>
+ </div>
+ </div>
+ <div class="contact-col">
+ 
+ <form action="form-handler.php" method="post">
+ <input type="text" name="name" placeholder="Enter your name" required>
+  <input type="email" name="email" placeholder="Enter email address" required>
+   <input type="text" name="subject" placeholder="Enter your subject" required>
+   <textarea rows="8" name="message" placeholder="Message" required></textarea>
+   <button type="submit" class="hero-btn red-btn">Send Message</button>
+ </form>
+ </div>
+ </div>
+ 
+ </section>
+ 
+ <!------------ footer ------------>
+  
+  <section class="footer">
+  <h4>About Us</h4>
+ <p>St.Joseph's College (Autonomous)</p>
+  <p>College Main Road, Annamalai Nagar, Teppakulam, Tiruchirappalli, Tamil Nadu 620002</p>
+  <div class="icons">
+  <i class="fa fa-facebook-official"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter-square"></i>
+  <i class="fa fa-linkedin-square"></i>
+  </div>
+  <p>copyrights&copy;2023</p>
+  <p>Made with &hearts; <i class="fa fa-heart-o"></i>by CAMILLUS</p>
+  </section>
+  
+  <!-------JavaScript for Toggle Menu----->
+  <script>
+  
+  var navLinks= document.getElementById("navLinks");
+  function showMenu(){
+     navLinks.style.right ="0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+  
+  </script>
+  
+  
+</body>
+</html>
